@@ -1,0 +1,20 @@
+{
+  "component": {
+    "com.mqtt_test03": {
+      "author": "<PLACEHOLDER_AUTHOR>",
+      "version": "NEXT_PATCH",
+      "build": {
+        "build_system": "zip",
+        "options": {
+          "zip_name": ""
+        }
+      },
+      "publish":       {
+        "bucket": "s3-hdi-prd-greengrass-component-phm",
+        "region": "ap-northeast-2"
+      }
+    }
+  },
+  "gdk_version": "1.6.2"
+}
+

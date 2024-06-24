@@ -1,0 +1,16 @@
+{"ver": "0.0.1",
+"utc": "2024-04-04T07:00:43.374",
+"tz": "+09:00",
+"seq": "",
+"pyld": {
+    "Phm.Sys.Swing1.RG_1_HealthIdx": "",
+    "Mch.Sys.Swing1.RG_1_Status": "",
+    "Phm.Sys.Swing1.RG_2_HealthIdx": "",
+    "Phm.Sys.Swing1.RG_2_Status": "",
+    "Phm.Sys.Swing1.Motor_HealthIdx": "",
+    "Phm.Sys.Swing1.Motor_Status": "",
+    "Phm.Sys.Mainpump.MP_1_HealthIdx": "",
+    "Phm.Sys.Mainpump.MP_1_Status": "",
+    "Phm.Sys.Mainpump.MP_2_HealthIdx": "",
+    "Phm.Sys.Mainpump.MP_2_Status": ""}
+}

@@ -1,0 +1,49 @@
+{
+    "RecipeFormatVersion": "2020-01-25",
+    "ComponentName": "com.mqtt_test03",
+    "ComponentVersion": "NEXT_PATCH",
+    "ComponentType": "aws.greengrass.generic",
+    "ComponentDescription": "uploading mqtt publish component for phm .",
+    "ComponentPublisher": "<PLACEHOLDER_AUTHOR>",
+    "ComponentConfiguration": {
+        "DefaultConfiguration": {
+            "accessControl": {
+                "aws.greengrass.ipc.mqttproxy": {
+                    "hdx.phm.mqtt_test03:mqttproxy:1": {
+                        "policyDescription": "Allows access to publish to all topics.",
+                        "operations": [
+                            "aws.greengrass#PublishToIoTCore",
+                            "aws.greengrass#SubscribeToIoTCore"
+                        ],
+                        "resources": [
+                            "*"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "Manifests": [
+        {
+            "Platform": {
+                "os": "all"
+            },
+            "Artifacts": [
+                {
+                    "URI": "{ARTIFACTS_URI}",
+                    "Unarchive": "ZIP"
+                }
+            ],
+            "Lifecycle": {
+                "Install": {
+                    "RequiresPrivilege": true,
+                    "Script": "pip3 install awsiotsdk"
+                },
+                "Run": {
+                    "RequiresPrivilege": true,
+                    "Script": "python3 {artifacts:decompressedPath}/com.mqtt_test03/pub_phm.py"
+                }
+            }
+        }
+    ]
+}
